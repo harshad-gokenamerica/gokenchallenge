@@ -1,0 +1,19 @@
+@import './stylesheets/variables.scss';
+@import './stylesheets/common.scss';
+@import './stylesheets/hero_image_overlay.scss';
+@import './stylesheets/navbar.scss';
+@import './stylesheets/image_text_example.scss';
+@import './stylesheets/header_text_button.scss';
+@import './stylesheets/blog_posts_section.scss';
+@import './stylesheets/job_listings.scss';
+@import './stylesheets/footer.scss';
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    margin: 0;
+}

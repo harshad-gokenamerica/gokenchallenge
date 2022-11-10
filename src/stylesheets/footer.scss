@@ -1,0 +1,19 @@
+.footer{
+    font-size: 14px;
+    font-weight: 500;
+    border-top: solid 1px $primary-gray;
+
+    &-subcategories{
+        &-wrapper{
+            height: 60%;
+            @media #{$laptop-down}{
+                height: 100%;
+            }
+        }
+        &-link{
+            color: $primary-text-color;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+    }
+}

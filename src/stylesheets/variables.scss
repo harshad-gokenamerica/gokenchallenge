@@ -1,0 +1,30 @@
+$extraBig-device : 'only screen and (min-w idth: 1600px)';
+$laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$mini-laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1300px)';
+$desktop-device : 'only screen and (min-width: 1200px)';
+$tablet-device:'only screen and (min-width: 768px) and (max-width: 1199px)';
+$large-mobile:'only screen and (max-width: 767px)';
+$small-mobile: 'only screen and (max-width: 479px)';
+
+$mobile-up:'only screen and (min-width: 400px)';
+$tablet-up:'only screen and (min-width: 768px)';
+$laptop-up:'only screen and (min-width: 1028px)';
+$desktop-up:'only screen and (min-width: 1200px)';
+
+$mobile-down:'only screen and (max-width: 400px)';
+$tablet-down:'only screen and (max-width: 768px)';
+$laptop-down:'only screen and (max-width: 1028px)';
+$desktop-down:'only screen and (max-width: 1200px)';
+
+$primary-text-color: #1E1E1E;
+$secondary-text-color: #686868;
+$primary-white: white;
+$primary-green: #7EBD57;
+$primary-gray: #EEEEEE;
+$primary-black: #000000;
+$secondary-gray: #F8F8F8;
+$light-gray: lightgrey;
+$tertiary-gray: #EBEBEB;
+
+
+

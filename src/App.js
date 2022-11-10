@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import NavbarComponent from "./components/Generic/Navbar/NavbarComponent";
+import {
+  BrowserRouter as Router,
+  Route, 
+  Routes, 
+} from 'react-router-dom'
+import Home from "~/pages/Home";
+import Careers from '~/pages/Careers';
+import Footer from '~/components/Generic/Footer/Footer';
+import JobDetails from '~/components/Job Details/JobDetails';
+import { joinTheTeamButtons } from "~/data/landing-page-data"
+import HeaderTextAndButton from "~/components/Generic/HeaderTextAndButton/HeaderTextAndButton"
+import BlogPostsSection from "~/components/Generic/BlogPostsSection/BlogPostsSection"
+import { blogPosts } from "./data/landing-page-data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+            <NavbarComponent/>
+            <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/careers" element={<Careers/>} />
+                <Route path="/careers/:id" element={<JobDetails/>} />
+            </Routes>
+            <HeaderTextAndButton element={joinTheTeamButtons[2]} variant={"gray"}/>
+            <BlogPostsSection sectionTitle="INSIGHTS" blogPosts={blogPosts}/>
+            <Footer />
+        </Router>
+    </>
   );
 }
 

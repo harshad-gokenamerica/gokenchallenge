@@ -1,0 +1,85 @@
+.header-text-button{
+    &-wrapper{
+        display: flex;
+        background-color: $primary-white;
+        color: $primary-text-color;
+        min-height: 300px;
+        border: none;
+        border-radius: 0;
+        text-align: center;
+        padding-bottom: 1rem;
+
+        &.gray{
+            background-color: $secondary-gray;
+        }
+        
+        &.footer{
+            background-image: url("../assets/flowingliquid.jpg");
+            color: $primary-white;
+        }
+    }
+
+
+    &-body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        padding: 0;
+        @media #{$large-mobile}{
+            padding: 1rem;
+        }
+    }
+
+    &-title{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 68px;
+        
+        @media #{$large-mobile}{
+            font-size: 17px;
+            line-height: 2;
+        }
+    }
+
+    &-subtitle{
+        width: 60%;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 42px;
+        margin: auto;
+            
+        @media #{$large-mobile}{
+            width: 100%;
+            font-size: 10px;
+            line-height: 21px;
+            text-align: justify;
+        }
+    }
+
+    &-content{
+        width: 100%;
+        padding: 1rem 0;
+        &-video{
+            padding: 0;
+            border-radius: 0;
+            border: none;
+        }
+        &-bottom-gray,
+        &-top-gray{
+              background-color: $secondary-gray;
+              padding: 0;
+            
+              &>div{
+                height: 50%;
+                background-color: $primary-white;
+              }
+          }
+          &-top-gray{
+            display: flex;
+            flex-direction: column-reverse;
+          }
+    }
+}

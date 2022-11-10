@@ -1,0 +1,48 @@
+.button-primary{
+    width: auto;
+    padding: 15px 30px;
+    color: white;
+    background-color: $primary-green;
+    border: 1px solid $primary-white;
+    border-radius: 37px;
+    font-size: 20px;
+
+    &.small{
+        font-size: 16px;
+    }
+    
+    &.gray{
+        color: $primary-green;
+        background-color: transparent;
+        border: 1px solid $primary-green;
+    }
+
+    &.menu{
+        border-radius: 8px;
+        
+        @media #{$tablet-down}{
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+    }
+
+    &.footer{
+        color: $primary-text-color;
+        font-weight: 600;
+        font-size: 14px;
+        background-color: $primary-gray;
+        border: none;
+        border-radius: 0;
+        padding: 0.7rem 1.2rem;
+    }
+    @media #{$large-mobile}{
+        font-size: 12px;
+    }
+}
+
+.card{
+    &-img{
+        border: none;
+        border-radius: 0;
+    }
+}
